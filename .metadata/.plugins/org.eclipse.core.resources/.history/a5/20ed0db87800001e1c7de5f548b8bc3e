@@ -1,0 +1,23 @@
+package annonymousClass;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+
+public class SortingByEmail {
+
+	public static void main(String[] args) {
+
+		ArrayList<Person> list = new ArrayList<Person>();
+		list.add(new Person(1, "Revan", "revans@gmail.com"));
+		list.add(new Person(2, "Nikhil", "nikhil@gmail.com"));
+		list.add(new Person(3, "Kiran", "kiran@gmail.com"));
+		list.add(new Person(4, "Nitin", "abcNitin@gmail.com"));
+		list.add(new Person(5, "sudhakar", "sudhakar@gmail.com"));
+
+
+		Comparatoe<Person> com = new Comparator<Person>() {
+			
+		};
+	}
+
+}

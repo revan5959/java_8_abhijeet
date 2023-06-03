@@ -1,0 +1,10 @@
+package annonymousClass;
+
+public class SortingByEmail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

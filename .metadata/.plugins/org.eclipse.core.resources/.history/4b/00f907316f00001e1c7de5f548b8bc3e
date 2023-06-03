@@ -1,0 +1,16 @@
+package staticInnerClass;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		OuterClass.outer();
+		System.out.println(OuterClass.message);
+		System.out.println(OuterClass.InnerClass.inn());
+
+
+	}
+
+}
+
+

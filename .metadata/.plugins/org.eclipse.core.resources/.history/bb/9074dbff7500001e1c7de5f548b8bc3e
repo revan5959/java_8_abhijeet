@@ -1,0 +1,21 @@
+package annonymousClass;
+
+import java.util.ArrayList;
+
+public class Sorting {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Person> list = new ArrayList<Person>();
+		list.add(new Person(1,"Revan","revans@gmail.com"));
+		list.add(new Person(1,"Revan","revans@gmail.com"));
+		list.add(new Person(1,"Revan","revans@gmail.com"));
+		list.add(new Person(1,"Revan","revans@gmail.com"));
+		list.add(new Person(1,"Revan","revans@gmail.com"));
+
+		
+
+	}
+
+}
