@@ -5,8 +5,16 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="annonymousClass.HelperClass"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="day2.Customers"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="interfaceUpdate.Interface1"/>
+    <fullyQualifiedTypeName name="interfaceUpdate.ImplClass"/>
+    <fullyQualifiedTypeName name="interfaceUpdate.Interface2"/>
+    <fullyQualifiedTypeName name="interfaceUpdate.Interface3"/>
+    <fullyQualifiedTypeName name="interfaceUpdate.ImplClassInter2_3"/>
+    <fullyQualifiedTypeName name="interfaceUpdate2.ImplClassInterface1"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="interfaceUpdate2.Interface1"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
 </qualifiedTypeNameHistroy>
