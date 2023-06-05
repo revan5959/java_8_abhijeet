@@ -1,0 +1,137 @@
+1.	Static Inner class
+2.	Non-static Inner class
+3.	Local inner class
+
+
+Comparable and Comparator Interface:
+public class Person implements Comparable<Person> {
+// here the Person object is converted to Comparable object
+//Whereas in case of Comparator we are not converting to Comparator Object
+}
+
+In comparator we are not changing the helper object
+
+Day2:
+Comparable and Comparator both are functional interface:
+
+Public interface Comparable {
+Public void compare();
+}
+
+Public interface Comparator { it is used for external class
+Public void compareTo();
+Public void equals();    ->  it is already part of Object class, hence it is functional interface
+}			- for comparator equals method is used to compare the objects, but in                  comparable interface equals() is seperatley implemented
+
+•	Anonymous class can be used for interface, functional interface, class and abstract class
+NOTES BY SIR:
+````````````````````
+Static inner class: It is a type of inner class declared as static member of a class.
+To access static member from static inner class, we need to use OuterClassName.InnerClassName.
+Ex: OuterClass.InnerClass.inn();
+To access non-static member from static inner class we need to create object of inner class, by calling inner class constructor using outer class name
+Ex: OuterClass.InnerClass innerClass = new OuterClass.InnerClass();
+innerClass.nonStatic();
+in this example non-static method is a non-static member in a static inner class.
+
+LOCAL INNER CLASS:
+It is a type of inner class declared as a local member in a method
+
+Class A
+{
+Public void test(){
+
+Class Xyz{
+}
+}
+}
+
+Annonymous Inner Class: It is a type of local inner class which does not have a class declaration.
+Anonymous class are used to create an object of a class extending or implementing another class or
+An interface.
+Ex: 
+public class DataHandler {                                                                               Annonymous Inner Class
+
+	public void sortByName(List<Customers> custList) {                > Here Comparator is a functional interface
+
+		Comparator<Customers> cum = new Comparator<Customers>() {
+
+			@Override
+			public int compare(Customers o1, Customers o2) {
+				// TODO Auto-generated method stub
+				return o1.getName().compareToIgnoreCase(o2.getName());
+			}
+
+		};
+
+		Collections.sort(custList, cum);
+		System.out.println("----------Customer Sorting by Name-----------");
+		for (Customers custSortName : custList)
+			System.out.println(custSortName);
+
+	}
+
+
+Annonymous class blocks are used for providing implementation to the abstract methods of its parent
+Interface or the parent class. Since anonymous class does not has the name, the name of its parent interface or the class is used to call anonymous class’s constructor.
+
+TYPES OF RELATIONSHIP:
+1>	Is A Relationship: child is having all the properties of the parent. ( Inheritence )
+Ex: Class A extends B {  }: B has all the properties of A
+
+2>	Has A Relationship: In this case One object has few properties of another object.
+Ex: Class B has some properties of class B
+
+Class Person {
+
+Int age;
+String name;
+}
+
+
+Class Relationship {
+Public Person p1;
+Public Person p2;
+}
+In general the tables can have only Has-A-Relationship only. There are four types:
+1.	One to one: one row of a table has relationship with one row of another table
+2.	One to many: one row of a table has relationship with many rows of another table
+3.	Many to many: many rows of a table has relationship with many rows of a column
+4.	Many to one: many rows of a table has relationship with one row of a table
+
+What is the use of Interface:
+1.	Achieve abstraction (can achieve abstraction)
+2.	Loose coupling
+3.	Multiple inheritance
+4.	Generalization
+5.	To declare method (By default method is public and abstract + concrete method/default method)
+
+Why we can achieve 100% abstraction for the Abstract class?
+-	Because Abstract class extends Object class which has 11 methods 
+-	Hence, we can’t achieve 100% abstraction by Abstract class
+We can achieve 100% abstraction through the Interface.
+
+In interface we cannot create a default method of the Object class. 
+Ex: default Boolean equals (Object o) { } is not possible because the interface will get confusion
+
+
+JAVA 8 UPDATE: 
+
+Interface update:
+-	In java 8 update we started getting two types of concrete methods in interface.
+-	These concrete methods are static and default.
+-	In the implementing class when it implements more than one interface, there is possibility of having default methods in these parent interface
+-	To overcome this situation of ambiguity it is compulsory to override common default method in implementing child class.
+
+Rule of creating default method in an interface:
+-	While creating default methods in interface the default methods signature should be different from Object class methods.
+
+
+
+
+
+
+
+
+
+
