@@ -1,7 +1,0 @@
-package annonymousClass;
-
-import java.util.Comparator;
-
-public class HelperClass implements Comparator<Person>{
-
-}

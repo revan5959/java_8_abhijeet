@@ -1,8 +1,0 @@
-package test;
-
-public class HelperCLasss {
-
-	public int compare(SortByComprartorObject o1, SortByComprartorObject o2) {
-		return o1.getId().compareTo(o2.getId());
-	}
-}

@@ -1,8 +1,0 @@
-package test;
-
-public class SortByComprartorObject {
-
-	private String name;
-	
-	private Integer id;
-}

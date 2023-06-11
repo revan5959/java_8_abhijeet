@@ -36,7 +36,10 @@ System.out.println("////////// LAMBDA IMPLEMENTATION for the above anonymous");
 			return e1.getEmail().compareToIgnoreCase(e2.getEmail());
 		};
 
-		Collections.sort(list, com1);
+		///////////// OR /////////////////////
+		Collections.sort(list, (e1, e2) -> {
+			return e1.getEmail().compareToIgnoreCase(e2.getEmail());
+		});
 		for (Person p : list)
 			System.out.println(p);
 	}
